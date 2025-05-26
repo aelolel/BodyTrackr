@@ -57,6 +57,7 @@ Route::middleware('auth')->get('/profile-settings', [UserController::class, 'pro
 Route::middleware('auth')->post('/profile-settings', [UserController::class, 'updateProfile'])->name('update-profile');
 
 Route::get('/', function () { return view('index');});
+
 // Rute untuk halaman Home
 Route::middleware('auth')->get('/home', [UserController::class, 'index'])->name('home');
 
