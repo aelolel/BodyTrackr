@@ -1,0 +1,12 @@
+  {
+    "build": {
+      "outputDirectory": "public"
+    },
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/public/index.php"
+      }
+    ]
+  }
+  
